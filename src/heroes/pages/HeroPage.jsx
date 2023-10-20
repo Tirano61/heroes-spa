@@ -25,7 +25,8 @@ export const HeroPage = () => {
     <div className='row mt-5'>
       <div className="col-4 animate__animated animate__flip">
         <img 
-          src={ `/assets/heroes/${id}.jpg` } 
+        // Esta ruta tambien cambia para probar en github pages debe ser /heroes-spa/heroes/${ id }.jpg
+          src={ `/heroes/${id}.jpg` } 
           className='img-thumbnail' 
           alt={hero.superhero} 
         />

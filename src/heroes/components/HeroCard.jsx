@@ -9,14 +9,13 @@ export const HeroCard = ({
   first_appearance,
   characters,
  }) => {
-  // Cambio solo para probar en github pages
-  const heroImageUrl = `/heroes-spa/heroes/${ id }.jpg`;
+  // Cambio solo para probar en github pages debe ser '/heroes-spa/heroes/${ id }.jpg'
+  const heroImageUrl = `/heroes/${ id }.jpg`;
  
   return (
     <div className="col">
       <div className="card">
         <div  className="row no-gutter">
-
           <div className="col-4 animate__animated animate__fadeInDownBig">
             <img src={heroImageUrl} className="card-img" alt={ superhero }/>
           </div>

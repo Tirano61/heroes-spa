@@ -7,7 +7,7 @@ import { AuthContext } from '../../auth/context';
 
 export const Navbar = () => {
 
-  const { authState, logout } = useContext( AuthContext );
+  const { user, logout } = useContext( AuthContext );
   const navigate = useNavigate();
 
   const onLogout = () =>{
@@ -56,7 +56,7 @@ export const Navbar = () => {
         <ul className="navbar-nav ml-auto">
           
           <span className='Nav-item nav-link text-info'>
-            { authState.user.name }
+            { user.name }
           </span>
           <button
             onClick={ onLogout }
