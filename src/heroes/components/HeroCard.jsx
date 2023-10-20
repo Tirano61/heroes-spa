@@ -9,8 +9,8 @@ export const HeroCard = ({
   first_appearance,
   characters,
  }) => {
-
-  const heroImageUrl = `/heroes/${ id }.jpg`;
+  // Cambio solo para probar en github pages
+  const heroImageUrl = `/heroes-spa/heroes/${ id }.jpg`;
  
   return (
     <div className="col">
